@@ -1,0 +1,9 @@
+Q: Maybe the index.html in template folder is needed only when django is used?
+A: It is needed even when django is not used!
+
+2. In package.json, this line is important. As it opens the server because of it.
+Otherwise it cannot be run.
+"scripts": {
+    "dev": "webpack-dev-server --mode development --open --watch index.js --output ./static/frontend/main.js"
+
+But before this in terminal , run npm i -D webpack-dev-server
